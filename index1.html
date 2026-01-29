@@ -123,7 +123,7 @@
     // --- CẤU HÌNH ---
     let gameState = {
         // ▼▼▼ DÁN API KEY CỦA BẠN VÀO GIỮA 2 DẤU NHÁY DƯỚI ĐÂY ▼▼▼
-        apiKey: 'DÁN_KEY_CỦA_BẠN_VÀO_ĐÂY', 
+        apiKey: 'AIzaSyB8NLibfH2L-mjDfZ-bpsMJ2Ju9Yk355iE', 
         // ▲▲▲ VÍ DỤ: 'AIzaSyD-123456abcdef...' ▲▲▲
         
         topic: '',
@@ -184,7 +184,7 @@
 
     async function fetchQuestion() {
         // Nếu không có Key hoặc đang dùng chế độ Offline -> Lấy luôn câu hỏi mẫu
-        if (!gameState.apiKey || gameState.apiKey.includes('DÁN_KEY') || gameState.isUsingOffline) {
+        if (!gameState.apiKey || gameState.apiKey.includes('AIzaSyB8NLibfH2L-mjDfZ-bpsMJ2Ju9Yk355iE') || gameState.isUsingOffline) {
             useOfflineQuestion();
             return;
         }
